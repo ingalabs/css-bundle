@@ -1,0 +1,6 @@
+services:
+    # ingalabs_css.service:
+    #     class: 'IngaLabs\CssBundle\Service'
+    #     arguments: ['@dependency']
+    #     tags:
+    #         - { name: demo.tag, priority: 10 }

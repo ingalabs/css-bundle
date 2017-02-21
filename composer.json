@@ -1,0 +1,44 @@
+{
+    "name": "ingalabs/css-bundle",
+    "type": "symfony-bundle",
+    "description": "CSS bundle",
+    "keywords": ["bundle", "css"],
+    "homepage": "https://github.com/ingalabs/css-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IngaLabs",
+            "homepage": "https://ingalabs.hu"
+        },
+        {
+            "name": "Antal Áron",
+            "email": "antalaron@antalaron.hu",
+            "homepage": "https://antalaron.hu"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/symfony": "~2.7|~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "<6.0.0",
+        "friendsofphp/php-cs-fixer": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IngaLabs\\CssBundle\\": "src/IngaLabs/CssBundle/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IngaLabs\\CssBundle\\Tests\\": "tests/IngaLabs/CssBundle/Tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
