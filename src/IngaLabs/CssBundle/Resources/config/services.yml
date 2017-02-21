@@ -4,3 +4,12 @@ services:
     #     arguments: ['@dependency']
     #     tags:
     #         - { name: demo.tag, priority: 10 }
+    ingalabs_css.css_file_repository:
+        class: Doctrine\ORM\EntityRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - 'IngaLabs\CssBundle\Entity\CssFile'
+
+    ingalabs_css.css_controller:
+        class: 'IngaLabs\CssBundle\Controller\CssController'
+        arguments: ['@ingalabs_css.css_file_repository']
