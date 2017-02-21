@@ -1,0 +1,3 @@
+ingalabs_css:
+    path: /assets/{path}
+    defaults: { _controller: ingalabs_css.css_controller }
